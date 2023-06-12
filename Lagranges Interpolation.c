@@ -2,8 +2,8 @@
 #include<conio.h>
 int main()
 {
-float x[10],f[10],y,sum=0.01;
-int n,i,j,l;
+float x[10],f[10],y,sum=0.0,l;
+int n,i,j;
 
 printf("Input number of data:");
 scanf("%d",&n);
@@ -27,7 +27,7 @@ for(i=0;i<n;i++)
         if(j!=i)
         {
 
-            l=l*(y-x[j]/(x[i]-x[j]));
+            l=l*(y-x[j])/(x[i]-x[j]);
 
         }
     }
